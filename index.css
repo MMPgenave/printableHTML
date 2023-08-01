@@ -1,0 +1,537 @@
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("fonts/YekanBakh-Regular.woff");
+}
+@font-face {
+  font-family: "Yekan Bakh FaNum";
+  src: url("fonts/YekanBakhFaNum-Regular.woff");
+}
+@font-face {
+  font-family: "Yekan Bakh NoEn";
+  src: url("fonts/YekanBakh-Thin.woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+H1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+label,
+button,
+input,
+p,
+small,
+strong,
+table,
+th,
+td,
+div,
+textarea,
+select,
+option,
+div,
+section,
+aside,
+footer {
+  font-family: "Yekan Bakh Black WOFF";
+  outline: none;
+  font-size: 13px;
+  text-align: right;
+}
+@page {
+  margin: 0 !important;
+  size: letter;
+}
+body {
+  width: 210mm;
+  margin: 0 auto;
+  border: 1px solid #123;
+}
+.pagebreak {
+  clear: both;
+  page-break-after: always;
+}
+
+.page {
+  size: A4;
+  margin-right: 97px;
+  width: 595px;
+  height: 842px;
+  background: #fff;
+  position: relative;
+}
+
+/* header style */
+.header-box {
+  display: flex;
+  align-items: center;
+  margin-top: 38px;
+  margin-right: 32px;
+  width: 220px;
+  height: 30px;
+}
+.header-box > .logo {
+  width: 30px;
+  height: 30px;
+  /* flex-shrink: 0; */
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+}
+.header-box .logo img {
+  width: 21.75px;
+  height: 21.75px;
+  /* flex-shrink: 0; */
+  opacity: 0.5;
+  margin: 3px;
+}
+.header-box > .infomation {
+  width: 170px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-right: 2px;
+}
+
+.header-box .infomation .title-test {
+  color: #222;
+  text-align: right;
+  font-family: Yekan Bakh;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px; /* 133.333% */
+}
+
+.header-box .infomation .organization-test {
+  color: #222;
+  text-align: right;
+  font-family: Yekan Bakh;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px; /* 133.333% */
+}
+
+/* end of header style */
+
+/* footer type 2  */
+.footer-type2 {
+  width: 595px;
+  height: 70px;
+  flex-shrink: 0;
+  background: #f5f5f5;
+  position: absolute;
+  bottom: 0px;
+  
+}
+.footer-type2-container{
+  border: rgb(17, 118, 220) solid;
+  display: flex;
+  width: 90%;
+  height: 70%;
+  margin-top: 10px;
+  margin-right: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-type2-container svg{
+  width: 30px;
+  height: 21.158px;
+  flex-shrink: 0;
+  opacity: 0.30000001192092896;
+}
+
+.footer-type2-container-rightSide{
+  display: flex;
+  border: #123 solid;
+}
+/* end of footer type 2  */
+.img-container {
+  position: absolute;
+  top: 124px;
+  right: 49px;
+  left: 466px;
+  bottom: 638px;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+.img-container img {
+  /* position: absolute;
+    top: 135px;
+    right: 60px;
+    left:477px;
+    bottom: 649px; */
+  margin: 10px;
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+}
+.right-side {
+  position: absolute;
+  top: 124px;
+  right: 138px;
+  left: 51px;
+  bottom: 638px;
+  width: 406px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+.right-side h1 {
+  margin-top: 17px;
+  margin-right: 17px;
+  color: #000;
+  text-align: right;
+  font-family: Yekan Bakh;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px; /* 83.333% */
+}
+.right-side h3 {
+  margin-right: 17px;
+  margin-top: 16px;
+  color: #000;
+  text-align: right;
+  font-family: Yekan Bakh;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px; /* 125% */
+}
+
+.bottom {
+  position: absolute;
+  top: 215px;
+  right: 49px;
+  width: 495px;
+  height: 577px;
+  flex-shrink: 0;
+  stroke-width: 1px;
+  stroke: #e0e0e0;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+.avatar {
+  display: flex;
+}
+.img-markzakerberg {
+  margin-top: 29px;
+  margin-right: 33px;
+  width: 50px;
+  height: 50px;
+  /* flex-shrink: 0; */
+  border-radius: 50px;
+  border: 1px solid #e0e0e0;
+  /* background: url("./assets/mark-zakerberg.png"); */
+}
+.name-of-tested-person {
+  /* padding: 10px; */
+  width: 104px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 65px;
+  border-radius: 10px;
+  background: #f5f5f5;
+  /* padding-bottom: 4px; */
+}
+.name-of-tested-person h1 {
+  color: #000;
+  text-align: right;
+  font-family: Yekan Bakh;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 166.667% */
+  margin-top: 0px;
+  margin-right: 12px;
+}
+
+.information {
+  min-width: auto;
+  display: flex;
+  width: 335px;
+  height: 208px;
+  margin-right: 33px;
+  margin-top: 13px;
+
+  /* border: 1px solid #e0e0e0; */
+  /* overflow: hidden; */
+}
+.information > .titles,
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.information > .infos {
+  margin-right: 10px;
+}
+.information > .titles > div {
+  color: #000;
+  text-align: right;
+  font-family: Yekan Bakh;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+.information > .infos > div {
+  color: #272727;
+  text-align: right;
+  font-family: Yekan Bakh FaNum;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 200% */
+}
+.Assessment {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  height: 75px;
+  width: 200px;
+  /* border: #df6464 solid; */
+}
+
+.Assessment > h1 {
+  color: #2ebb9d;
+  text-align: right;
+  font-family: Yekan Bakh;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 192.308% */
+}
+.Assessment :nth-child(2) {
+  margin-top: 10px;
+}
+.Assessment :nth-child(3) {
+  margin-top: 25px;
+}
+.vertical_line {
+  position: absolute;
+  top: 75px;
+  left: 240px;
+  width: 2px;
+  height: 130px;
+  background: #e0e0e0;
+}
+.Final_Expert_opinion {
+  width: 430px;
+  height: 64px;
+  margin-right: 33px;
+  margin-top: 20px;
+}
+.line_1 {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: #df6464 solid; */
+  margin-bottom: -12px;
+}
+.line_1 > h3 {
+  width: 97px;
+  color: #2ebb9d;
+  text-align: right;
+  font-family: Yekan Bakh;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 192.308% */
+}
+.line1-empty-green {
+  width: 330px;
+  border-top: 3px dotted #e0e0e0;
+}
+.dashed-line {
+  width: 100%;
+  border-top: 3px dotted #e0e0e0;
+  margin-top: 29px;
+}
+/* footer style */
+.footer-green {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 595px;
+  height: 150px;
+  margin-top: 50px;
+}
+.esanj_arm {
+  width: 45.373px;
+  height: 32px;
+
+  position: absolute;
+  bottom: 69px;
+  right: 60px;
+}
+.strong {
+  position: absolute;
+  bottom: 37px;
+  left: 180px;
+  color: #2ebb9d;
+  font-family: Yekan Bakh NoEn;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 31px; /* 103.333% */
+  opacity: 0.5;
+}
+.sii {
+  position: absolute;
+  bottom: 21px;
+  left: 75px;
+  width: 99px;
+  height: 30px;
+  flex-shrink: 0;
+  color: #989898;
+  font-family: Yekan Bakh NoEn;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 31px; /* 31% */
+}
+.footer {
+  position: absolute;
+  bottom: 0px;
+  background: #2ebb9d;
+  width: inherit;
+  height: 51px;
+}
+/* end of footer style */
+.title-green {
+  margin-top: 70px;
+  margin-right: 81px;
+  color: #2ebb9d;
+  text-align: right;
+  font-family: Yekan Bakh;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 166.667% */
+}
+.list-itmes-type1 {
+  display: flex;
+  /* border: #123 solid; */
+  align-items: center;
+  width: 500px;
+  height: 30px;
+  margin-right: -3px;
+}
+.index-number-type1 {
+  color: #2ebb9d;
+  text-align: center;
+  font-family: Yekan Bakh FaNum;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px; /* 88.235% */
+}
+.index-text-type1 {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 25px;
+  margin-right: 17px;
+  border-radius: 5px 0px 0px 5px;
+  background: #f5f5f5;
+}
+.green-text-index-type1 {
+  margin-left: 3px;
+  color: #2ebb9d;
+  text-align: right;
+  font-family: Yekan Bakh;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px; /* 88.235% */
+}
+.black-text-index-type1 {
+  color: #000;
+  font-family: Yekan Bakh;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+}
+.list-itmes-type2 {
+  display: flex;
+  margin-top: 2px;
+  /* border: #123 solid; */
+  align-items: center;
+  width: 400px;
+  height: 20px;
+}
+.index-number-type2 {
+  color: #272727;
+  text-align: center;
+  font-family: Yekan Bakh FaNum;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 200% */
+}
+.index-text-type2 {
+  margin-right: 17px;
+  color: #000;
+  text-align: right;
+  font-family: Yekan Bakh;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 200% */
+}
+.p4-top {
+  position: relative;
+  width: 595px;
+  height: 421px;
+  flex-shrink: 0;
+  background: #f5f5f5;
+}
+.p4-top > p {
+  color: #2ebb9d;
+  text-align: right;
+  font-family: Yekan Bakh;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px; /* 33.333% */
+  margin-right: 61px;
+  width: 250px;
+  height: 50px;
+  position: absolute;
+  top: 320px;
+  /* border: #123 solid; */
+  /* margin-top: 372px; */
+  /* margin-bottom: 20px; */
+}
+.p4-bottom {
+  margin-right: 61px;
+  margin-top: 11px;
+  color: #989898;
+  text-align: right;
+  font-family: Yekan Bakh;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px; /* 140% */
+}
