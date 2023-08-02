@@ -133,28 +133,64 @@ body {
   background: #f5f5f5;
   position: absolute;
   bottom: 0px;
-  
 }
-.footer-type2-container{
-  border: rgb(17, 118, 220) solid;
+.footer-type2-container {
+  /* border: rgb(17, 118, 220) solid; */
   display: flex;
   width: 90%;
   height: 70%;
   margin-top: 10px;
-  margin-right: 10px;
+  margin-right: 30px;
   justify-content: space-between;
   align-items: center;
 }
-.footer-type2-container svg{
+.footer-type2-container svg {
   width: 30px;
   height: 21.158px;
   flex-shrink: 0;
   opacity: 0.30000001192092896;
 }
 
-.footer-type2-container-rightSide{
+.footer-type2-container-rightSide {
   display: flex;
-  border: #123 solid;
+  justify-content: space-between;
+  align-items: center;
+  /* border: #123 solid; */
+  width: 52%;
+}
+.footer-type2-container-rightSide-text {
+  /* border: #123 solid; */
+  margin-left: -18px;
+}
+.footer-type2-container-rightSide-text p {
+  color: #757575;
+  font-family: Yekan Bakh;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px; /* 187.5% */
+  letter-spacing: 2.8px;
+  text-align: left;
+}
+.footer-type2-container-rightSide-line {
+  width: 2px;
+  height: 30px;
+  rotate: 90;
+  background-color: #80d7be;
+  /* margin-left: -10px; */
+}
+
+.footer-type2-container-rightSide-number {
+  color: #757575;
+  text-align: center;
+  font-family: Yekan Bakh FaNum;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 227.273% */
+  letter-spacing: 2.2px;
+  margin-right: -15px;
+  /* border: #123 solid; */
 }
 /* end of footer type 2  */
 .img-container {
@@ -181,7 +217,7 @@ body {
   height: 58px;
   flex-shrink: 0;
 }
-.right-side {
+.right-sidep1 {
   position: absolute;
   top: 124px;
   right: 138px;
@@ -194,7 +230,7 @@ body {
   border: 1px solid #e0e0e0;
 }
 
-.right-side h1 {
+.right-sidep1 h1 {
   margin-top: 17px;
   margin-right: 17px;
   color: #000;
@@ -205,7 +241,7 @@ body {
   font-weight: 500;
   line-height: 15px; /* 83.333% */
 }
-.right-side h3 {
+.right-sidep1 h3 {
   margin-right: 17px;
   margin-top: 16px;
   color: #000;
@@ -384,9 +420,9 @@ body {
   bottom: 69px;
   right: 60px;
 }
-.strong {
+.strongmmp {
   position: absolute;
-  bottom: 37px;
+  bottom: 57px;
   left: 180px;
   color: #2ebb9d;
   font-family: Yekan Bakh NoEn;
@@ -398,7 +434,7 @@ body {
 }
 .sii {
   position: absolute;
-  bottom: 21px;
+  bottom: 81px;
   left: 75px;
   width: 99px;
   height: 30px;
@@ -535,3 +571,101 @@ body {
   font-weight: 700;
   line-height: 70px; /* 140% */
 }
+.page-first-line {
+  width: 535px;
+  height: 35px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #f5f5f5;
+  margin-top: 18px;
+  margin-right: 30px;
+  padding-top: 2px;
+}
+.page-first-line p {
+  color: #000;
+  text-align: right;
+  font-family: Yekan Bakh;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 16px;
+  /* border: #000 solid; */
+}
+.p5-containerr {
+  display: flex;
+  padding: 2px;
+  width: 90%;
+  height: 50%;
+  /* border: #000 solid; */
+  margin-top: 20px;
+  margin-right: 30px;
+}
+.p5-containerr div{
+  font-family: Yekan Bakh;
+  
+}
+.p5-container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 260px;
+  
+}
+.p5-container-right div{
+  color: #000;
+text-align: right;
+font-family: Yekan Bakh;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px; /* 173.333% */
+}
+.p5-container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 350px;
+  /* border: #222 solid 1px; */
+  margin-right: 16px;
+}
+.p5-container-left div{
+  color: #555;
+  text-align: right;
+  font-family: Yekan Bakh;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 200% */
+}
+
+.p6 *{
+  font-family: Yekan Bakh;
+}
+/* custom css */
+/* .flex{
+  display: flex;
+  
+}
+.jcc{
+  justify-content: center;
+  
+}
+.jcb {
+  justify-content: space-between;
+}
+.aic{
+  align-items: center;
+}
+.text-center {
+  text-align: center;
+}
+.view-in-print {
+  display: none;
+}
+.bg-green{
+  background: #2EBB9D;
+} */
+/* end of custom css */
